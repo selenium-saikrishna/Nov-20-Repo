@@ -1,0 +1,74 @@
+
+
+Creating a maven project
+1 These projects are called artifacts and they are created in   the commnad prompt
+  mvn archetype:generate
+  This will create a maven project in interactive mode
+
+
+
+
+
+Adding external dependencies info to pom.xml file
+-----------------------------------------------------
+1 Open the pom.xml file
+2 Go to <dependencies> node
+  We will find a dependency related to Junit
+  This is the location where we should add all the third party
+  dependencies that are required for the developer
+3 Open search.maven.org  (maven global server)
+4 Search for the external artifact that the developer has asked
+5 Copy the dependency info xml code
+6 Paste it in pom.xml file in the <dependencies> section
+7 Open cmd prompt
+8 change dir to the maven project that we created
+  cd path_of_maven_project
+9 mvn compile
+  The above command will download the external artifacts and place them in a folder called .m2 which gets created in users
+This .m2 works as the maven local repository
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

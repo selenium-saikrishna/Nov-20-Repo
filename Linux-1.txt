@@ -1,0 +1,72 @@
+
+1 To see the user who logged into the linux sever
+  whoami
+
+2 To see the list of users logged in 
+  who
+
+3 To see the home directory of the current user
+  echo $HOME
+
+4 To see the current working directory
+  pwd
+
+5 To create empty files
+  touch filename
+  To create multiple files
+  touch file1 file2 file3
+ 
+Note: touch command create 0 byte size file
+      and touch is also used for updating the timestamps of       files
+
+6 To create files where we can store data
+  cat > filename
+  Enter some data in the file
+  To come out of cat command (ctrl+d)
+  This represents End of file(EOF)
+
+7 To view the content of files
+  cat filename
+
+8 To append data to an exisiting file
+  cat >> filename
+
+9 To create directories
+  mkdir dir_name
+
+10 To create multiple directories one within another
+  mkdir -p dir1/dir2/dir3/dir4
+
+11 To remove empty directories
+   rmdir dirname
+
+12 To delete directories that have files and folders
+   rm -r dirname
+
+13 To change directories
+   cd dirname
+   Note: . represents current directory
+         cd .   will not move the control into any                 directory it will remain on the current                 directory
+         .. represents parent directory
+         cd .. will take the control to the parent                directory
+   To goto the home directory of the current user
+   cd
+   (or)
+   cd ~
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

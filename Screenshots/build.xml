@@ -1,0 +1,19 @@
+<project name="Ant build process" default="build">
+	<target name="clean">
+           <delete dir="C:\Users\user\workspace\Sample1\Build"/>
+    </target>
+	<target name="init" depends="clean">
+           <mkdir dir="C:\Users\user\workspace\Sample1\Build"/>
+		   <mkdir dir="C:\Users\user\workspace\Sample1\Build\Classes"/>
+		   <mkdir dir="C:\Users\user\workspace\Sample1\Build\Artifact"/>
+    </target>
+	<target name="compile" depends="init">
+           <javac srcdir="C:\Users\user\workspace\Sample1\src"
+                  destdir="C:\Users\user\workspace\Sample1\Build\Classes"
+                  />
+    </target>
+	<target name="build" depends="compile">
+           <jar destfile="C:\Users\user\workspace\Sample1\Build\Artifact\Sample.jar" 
+		        basedir="C:\Users\user\workspace\Sample1\Build\Classes"/>
+    </target>
+</project>
